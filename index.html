@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Main weather app container -->
+    <div class="app">
+
+        <!-- Header section -->
+        <header>
+
+            <h2>🌤 Weather App</h2>
+
+            <!-- Search area -->
+            <div class="search-box">
+                <input type="text" id="cityInput" placeholder="Enter city name">
+                <button id="searchBtn">Search</button>
+            </div>
+
+        </header>
+
+        <main>
+
+            <!-- Loading message appears during API requests -->
+            <p id="loading"></p>
+
+            <!-- Any errors will be shown here -->
+            <p id="error"></p>
+
+            <!-- Current weather card -->
+            <section class="hero">
+
+                <div id="weatherIcon">☀</div>
+
+                <h2 id="cityName">
+                    Detecting location...
+                </h2>
+
+                <h1 id="temperature">
+                    --°C
+                </h1>
+
+                <p id="description">
+                    Loading weather information...
+                </p>
+
+            </section>
+
+            <!-- Weather statistics -->
+            <section class="stats">
+
+                <div class="stat-box">
+                    <span>Humidity</span>
+                    <strong id="humidity">--%</strong>
+                </div>
+
+                <div class="stat-box">
+                    <span>Wind Speed</span>
+                    <strong id="wind">-- km/h</strong>
+                </div>
+
+                <div class="stat-box">
+                    <span>UV Index</span>
+                    <strong id="uv">--</strong>
+                </div>
+
+            </section>
+
+            <!-- Forecast section -->
+            <section class="forecast-section">
+
+            
+
+                <div id="forecast"></div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
