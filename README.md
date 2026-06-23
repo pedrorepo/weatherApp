@@ -1,5 +1,10 @@
 # Weather App
 
+## Student Information
+
+**Name:** Pedro Aisosa Imade  
+**Student ID:** ALT/SOE/BAR/026/0298
+
 ---
 
 ## Project Description
